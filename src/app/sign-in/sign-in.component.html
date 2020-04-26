@@ -1,0 +1,42 @@
+<div id="signUpButton">
+  <nav>
+<a routerLink = "/signUp" routerLinkActive = "active">
+<button class="signUp">
+  sign-up
+</button>
+</a>
+</nav>
+</div>
+<form [formGroup] = "signInForm" id= "signInForm">
+  <div id="form">
+  <div id="emailId">
+    <label>
+      Email Id:
+      </label>
+      </div>
+      <div id="inputEmail">
+      <input type = "text" FormControlName ="email_id">
+      </div>
+      <div id="password">
+      <label>
+        password:
+        </label>
+        </div>
+        <div id="inputPassword">
+        <input type="password" FormControlName="password">
+          </div>
+          <nav><a routerLink="/user" routerLinkActive="active">
+        <button class="signInButton" type="submit" [disabled]="!signInForm.valid">Sign In</button>
+        </a></nav>
+</div>
+</form>
+<h3>forgot password</h3>
+<h3>new user?</h3>
+<h3>sign up here</h3>
+<nav>
+<a routerLink = "/signUp" routerLinkActive = "active">
+<button class="signUp">
+sign-up
+</button>
+</a>
+</nav>
